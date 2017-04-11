@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <declare-styleable name="ImageCoverFlowView">
         <attr name="visibleImage" format="integer"/>
         <attr name="reflectionHeight" format="fraction"/>
@@ -16,5 +15,4 @@
             <enum name="wrap_content" value="1"/>
         </attr>
     </declare-styleable>
-
 </resources>
