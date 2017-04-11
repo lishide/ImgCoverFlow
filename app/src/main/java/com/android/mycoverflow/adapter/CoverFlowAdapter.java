@@ -10,7 +10,7 @@ import com.android.mycoverflow.activity.R;
 import com.android.mycoverflow.bean.ChannelBean;
 import com.android.mycoverflow.utils.MyBitmapImageViewTarget;
 import com.bumptech.glide.Glide;
-import com.ui.custom.view.coverflow.ICoverFlowAdapter;
+import com.img.coverflow.widget.ICoverFlowAdapter;
 
 import java.util.List;
 

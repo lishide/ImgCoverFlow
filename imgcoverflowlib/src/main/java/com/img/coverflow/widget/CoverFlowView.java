@@ -1,4 +1,4 @@
-package com.ui.custom.view.coverflow;
+package com.img.coverflow.widget;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -19,7 +19,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 import android.widget.Scroller;
 
-import com.android.mycoverflow.activity.R;
+import com.img.coverflow.R;
 
 import java.util.ArrayList;
 

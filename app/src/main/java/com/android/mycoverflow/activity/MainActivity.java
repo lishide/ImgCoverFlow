@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import com.android.mycoverflow.adapter.CoverFlowAdapter;
 import com.android.mycoverflow.bean.ChannelBean;
-import com.ui.custom.view.coverflow.CoverFlowView;
+import com.img.coverflow.widget.CoverFlowView;
 
 import java.util.ArrayList;
 import java.util.List;

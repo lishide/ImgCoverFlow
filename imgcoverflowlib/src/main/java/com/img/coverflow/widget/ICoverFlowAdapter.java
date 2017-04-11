@@ -1,4 +1,4 @@
-package com.ui.custom.view.coverflow;
+package com.img.coverflow.widget;
 
 import android.view.View;
 import android.view.ViewGroup;
