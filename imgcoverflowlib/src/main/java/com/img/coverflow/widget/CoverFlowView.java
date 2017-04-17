@@ -575,8 +575,8 @@ public class CoverFlowView extends RelativeLayout {
                 if (isOnTopView && touchViewItem == getTopView()
                         && inRangeOfView(touchViewItem, event)) {
 
-                    if (mTopViewClickLister != null) {
-                        mTopViewClickLister.onClick(getTopViewPosition(), getTopView());
+                    if (mTopViewClickListener != null) {
+                        mTopViewClickListener.onClick(getTopViewPosition(), getTopView());
                     }
                 }
                 touchViewItem = null;
@@ -600,8 +600,8 @@ public class CoverFlowView extends RelativeLayout {
             public void run() {
                 touchViewItem = null;
                 isOnTopView = false;
-                if (mTopViewLongClickLister != null) {
-                    mTopViewLongClickLister.onLongClick(getTopViewPosition(), getTopView());
+                if (mTopViewLongClickListener != null) {
+                    mTopViewLongClickListener.onLongClick(getTopViewPosition(), getTopView());
                 }
             }
         };
@@ -627,16 +627,16 @@ public class CoverFlowView extends RelativeLayout {
         return false;
     }
 
-    private OnTopViewClickLister mTopViewClickLister;
-    private OnTopViewLongClickLister mTopViewLongClickLister;
+    private OnTopViewClickListener mTopViewClickListener;
+    private OnTopViewLongClickListener mTopViewLongClickListener;
 
     /**
      * 设置 TopView 的点击监听
      *
-     * @param topViewClickLister
+     * @param topViewClickListener
      */
-    public void setOnTopViewClickLister(OnTopViewClickLister topViewClickLister) {
-        this.mTopViewClickLister = topViewClickLister;
+    public void setOnTopViewClickListener(OnTopViewClickListener topViewClickListener) {
+        this.mTopViewClickListener = topViewClickListener;
     }
 
     /**
@@ -644,17 +644,17 @@ public class CoverFlowView extends RelativeLayout {
      *
      * @return
      */
-    public OnTopViewClickLister getOnTopViewClickLister() {
-        return this.mTopViewClickLister;
+    public OnTopViewClickListener getOnTopViewClickListener() {
+        return this.mTopViewClickListener;
     }
 
     /**
      * 设置 TopView 的长点击监听
      *
-     * @param topViewLongClickLister
+     * @param topViewLongClickListener
      */
-    public void setOnTopViewLongClickLister(OnTopViewLongClickLister topViewLongClickLister) {
-        this.mTopViewLongClickLister = topViewLongClickLister;
+    public void setOnTopViewLongClickListener(OnTopViewLongClickListener topViewLongClickListener) {
+        this.mTopViewLongClickListener = topViewLongClickListener;
     }
 
     /**
@@ -662,17 +662,17 @@ public class CoverFlowView extends RelativeLayout {
      *
      * @return
      */
-    public OnTopViewLongClickLister getOnTopViewLongClickLister() {
-        return this.mTopViewLongClickLister;
+    public OnTopViewLongClickListener getOnTopViewLongClickListener() {
+        return this.mTopViewLongClickListener;
     }
 
-    public interface OnTopViewClickLister {
+    public interface OnTopViewClickListener {
 
         void onClick(int position, View itemView);
 
     }
 
-    public interface OnTopViewLongClickLister {
+    public interface OnTopViewLongClickListener {
 
         void onLongClick(int position, View itemView);
 

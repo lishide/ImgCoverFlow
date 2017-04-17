@@ -26,25 +26,21 @@ public class CoverFlowAdapter implements ICoverFlowAdapter {
 
     @Override
     public int getCount() {
-        // TODO Auto-generated method stub
         return mArray == null ? 0 : mArray.size();
     }
 
     @Override
     public Object getItem(int position) {
-        // TODO Auto-generated method stub
         return mArray.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        // TODO Auto-generated method stub
         return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // TODO Auto-generated method stub
         Holder holder = null;
         if (convertView == null) {
             holder = new Holder();

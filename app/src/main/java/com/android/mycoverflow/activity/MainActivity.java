@@ -62,16 +62,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         coverFlowView.setAdapter(coverFlowAdapter);
 
         // 给coverFlowView的TOPView 添加点击事件监听
-        coverFlowView.setOnTopViewClickLister(new CoverFlowView.OnTopViewClickLister() {
-            @Override
-            public void onClick(int position, View itemView) {
-                ChannelBean channelBean = channelBeanList.get(position);
-
-                Toast.makeText(context, "点击事件 position：" + position + "， text：" + channelBean.getName(),
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
+        coverFlowView.setOnTopViewClickListener(mOnTopViewClickListener);
     }
+
+    private CoverFlowView.OnTopViewClickListener mOnTopViewClickListener = new CoverFlowView.OnTopViewClickListener() {
+        @Override
+        public void onClick(int position, View itemView) {
+            ChannelBean channelBean = channelBeanList.get(position);
+
+            Toast.makeText(context, "点击事件 position：" + position
+                    + "， text：" + channelBean.getName(), Toast.LENGTH_SHORT).show();
+        }
+    };
 
     @Override
     public void onClick(View v) {
