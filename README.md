@@ -12,6 +12,7 @@
 <image src="https://github.com/lishide/ImgCoverFlow/raw/master/art/ImgCoverFlow_art.gif?raw=true" width="280px"/>
 
 ## 依赖
+[![](https://jitpack.io/v/lishide/ImgCoverFlow.svg)](https://jitpack.io/#lishide/ImgCoverFlow)
 #### JitPack 引入方法
 ##### 1. 在 Project 下的 build.gradle 添加
 ```java
